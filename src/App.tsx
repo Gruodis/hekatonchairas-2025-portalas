@@ -1,7 +1,7 @@
 import "./App.scss";
 import { mockAgenda } from "./data/mock/agenda";
-import AgendaList from "./sections/Agenda/Agenda";
-import Hero from "./sections/Hero/Hero";
+import AgendaList from "./components/features/Agenda/Agenda";
+import Hero from "./components/features/Hero/Hero";
 
 function App() {
   return (
