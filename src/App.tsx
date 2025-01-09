@@ -7,7 +7,7 @@ import { participantsEntries } from "./data/participants";
 
 function App() {
   return (
-    <div className="grid gap-8">
+    <div className="grid gap-8 w-full">
       <Hero />
       <AgendaList items={mockAgenda} />
       <Participants entries={participantsEntries} />

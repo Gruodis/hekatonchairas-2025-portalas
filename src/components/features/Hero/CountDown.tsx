@@ -1,34 +1,50 @@
 import { useState, useEffect } from "react";
 
-export default function CountdownTimer(): JSX.Element {
-  const targetDate = new Date("2025-01-27T00:00:00").getTime();
+interface TimeLeft {
+  days: string;
+  hours: string;
+  minutes: string;
+  seconds: string;
+}
 
-  const [timeLeft, setTimeLeft] = useState({
+export default function CountdownTimer() {
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: "00",
     hours: "00",
     minutes: "00",
     seconds: "00",
   });
 
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      const now: number = new Date().getTime();
-      const difference: number = targetDate - now;
+  const targetDate = new Date("Jan 24, 2025 09:30:00").getTime();
 
+  const formatTimeUnit = (value: string) => (
+    <div className="flex items-center space-x-1">
+      {value.split("").map((digit, idx) => (
+        <div
+          key={idx}
+          className=" px-1.5 bg-white text-primary-dark rounded-lg text-2xl leading-[1.5] md:text-[42px]"
+        >
+          {digit}
+        </div>
+      ))}
+    </div>
+  );
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
       if (difference <= 0) {
         setTimeLeft({ days: "00", hours: "00", minutes: "00", seconds: "00" });
-        clearInterval(timer); // Stop the timer when time is up
+        clearInterval(timer);
         return;
       }
-
-      const days: number = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours: number = Math.floor(
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
         (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      const minutes: number = Math.floor(
-        (difference % (1000 * 60 * 60)) / (1000 * 60)
-      );
-      const seconds: number = Math.floor((difference % (1000 * 60)) / 1000);
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
       setTimeLeft({
         days: days.toString().padStart(2, "0"),
@@ -36,17 +52,17 @@ export default function CountdownTimer(): JSX.Element {
         minutes: minutes.toString().padStart(2, "0"),
         seconds: seconds.toString().padStart(2, "0"),
       });
-    };
+    }, 1000);
 
-    const timer: number = setInterval(calculateTimeLeft, 1000);
-
-    // Cleanup the interval on component unmount
     return () => clearInterval(timer);
   }, [targetDate]);
 
   return (
-    <>
-      {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
-    </>
+    <div className="flex space-x-6 md:space-x-12">
+      {formatTimeUnit(timeLeft.days)}
+      {formatTimeUnit(timeLeft.hours)}
+      {formatTimeUnit(timeLeft.minutes)}
+      {formatTimeUnit(timeLeft.seconds)}
+    </div>
   );
 }

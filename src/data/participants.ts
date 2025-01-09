@@ -7,4 +7,6 @@ export const participantsEntries: ParticipantsEntry[] = [
   { time: "13:00 - 14:00", description: "Lunch Break" },
   { time: "14:00 - 16:00", description: "Development Work" },
   { time: "16:00 - 16:30", description: "Wrap-up Meeting" },
+  { time: "16:00 - 16:30", description: "Wrap-up Meeting" },
+  { time: "16:00 - 16:30", description: "Wrap-up Meeting" },
 ];
