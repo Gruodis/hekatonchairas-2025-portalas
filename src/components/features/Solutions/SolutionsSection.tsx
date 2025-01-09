@@ -68,7 +68,7 @@ export default function SolutionsSection({
           (solution: Solution): JSX.Element => (
             <SwiperSlide key={solution.id} className="!bg-transparent">
               <div className="text-white text-left font-grotesk mx-6 mb-8">
-                <div className="font-bold text-xl pb-2 leading-tight">
+                <div className="font-bold text-xl pb-2 leading-tight text-secondary-dark">
                   {solution.title}
                 </div>
                 <p>{solution.description}</p>

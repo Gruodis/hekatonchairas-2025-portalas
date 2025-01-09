@@ -12,7 +12,7 @@ import SolutionsSection from "./components/features/Solutions/SolutionsSection";
 
 function App() {
   return (
-    <div className="grid gap-8 w-full overflow-hidden">
+    <div className="grid gap-44 w-full overflow-hidden">
       <Hero />
 
       <SolutionsSection items={mockSolutions} />

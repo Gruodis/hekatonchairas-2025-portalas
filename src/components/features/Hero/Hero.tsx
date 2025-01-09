@@ -8,7 +8,10 @@ AOS.init();
 export default function Hero(): JSX.Element {
   return (
     <section className="hero-container h-screen flex flex-wrap relative items-start isolate">
-      <img src="/images/logo-w.svg" className="max-h-[56px]" alt="" />
+      <div className="max-w-[1440px] w-full px-12 pt-8 mx-auto">
+        <img src="/images/logo-w.svg" className="max-h-[56px]" alt="" />
+      </div>
+
       {/* Softer outer glow */}
       <RadialGradient
         centerColor="#73ffc9"
@@ -39,6 +42,14 @@ export default function Hero(): JSX.Element {
         data-aos-delay="900"
         data-aos-duration="3000"
         className="w-full max-w-[40px] blur-sm opacity-80 absolute -top-[300px] right-[40%]"
+        src="/images/vertical-text.webp"
+        alt=""
+      />
+      <img
+        data-aos="zoom-in-up"
+        data-aos-delay="900"
+        data-aos-duration="3000"
+        className="w-full max-w-[40px] blur-[6px] opacity-80 absolute -bottom-[300px] right-2/3 translate-x-1/2"
         src="/images/vertical-text.webp"
         alt=""
       />

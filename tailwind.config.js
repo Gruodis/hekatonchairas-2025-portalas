@@ -6,6 +6,7 @@ export default {
       colors: {
         "primary-dark": "#12191d",
         "primary-light": "#ECECEC",
+        "secondary-dark": "rgb(115,255,201)",
       },
       fontFamily: {
         sans: [
