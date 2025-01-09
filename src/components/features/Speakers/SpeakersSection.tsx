@@ -7,11 +7,8 @@ interface SpeakerListProps {
 export default function SpeakerList({ items }: SpeakerListProps): JSX.Element {
   return (
     <section className="flex flex-wrap justify-center">
-      {items.map((item, index) => (
-        <div
-          key={index}
-          className="text-white w-52 font-grotesk mx-6 mb-8"
-        >
+      {items.map((item: Speakers)  => (
+        <div key={item.id} className="text-white w-52 font-grotesk mx-6 mb-8">
           <div className="w-52 h-52 mb-4 rounded-full overflow-hidden">
             <img
               src={item.photoUrl}
