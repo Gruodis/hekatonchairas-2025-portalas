@@ -31,7 +31,7 @@ export default function Hero(): JSX.Element {
       />
       <img
         data-aos="zoom-in-down"
-        data-aos-delay="900"
+        data-aos-delay="300"
         data-aos-duration="3000"
         className="w-full max-w-[120px] blur-0 opacity-80 absolute -top-[800px] right-[4%]"
         src="/images/vertical-text.webp"
@@ -47,8 +47,8 @@ export default function Hero(): JSX.Element {
       />
       <img
         data-aos="zoom-in-up"
-        data-aos-delay="900"
-        data-aos-duration="3000"
+        data-aos-delay="300"
+        data-aos-duration="2000"
         className="w-full max-w-[40px] blur-[6px] opacity-80 absolute -bottom-[300px] right-2/3 translate-x-1/2"
         src="/images/vertical-text.webp"
         alt=""
@@ -58,10 +58,11 @@ export default function Hero(): JSX.Element {
         data-aos="zoom-in-up"
         data-aos-delay="300"
         data-aos-duration="3000"
-        className="w-full max-w-[60%] opacity-90 absolute -top-[15%] -right-[10%]"
+        className="w-full max-w-[60%] opacity-90 absolute -top-[15%] -right-[10%] animate-longer-zoom"
         src={heroHeads}
         alt=""
       />
+
       <RadialGradient
         centerColor="#73ffc9"
         outerColor="#76dcff"

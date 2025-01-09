@@ -100,3 +100,18 @@ body {
 .swiper-pagination-bullet {
   background: #fff;
 }
+
+@keyframes longer-zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(100px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-longer-zoom {
+  animation: longer-zoom 6s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
