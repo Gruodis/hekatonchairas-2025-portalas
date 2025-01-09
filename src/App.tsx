@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="grid gap-8 w-full overflow-hidden">
       <Hero />
-      <SolutionsSection items={mockSolutions} />
+      <SolutionsSection {...mockSolutions} />
       <AgendaList items={mockAgenda} />
       {/* <Participants entries={participantsEntries} /> */}
       <SpeakerList items={mockSpeakers} />
