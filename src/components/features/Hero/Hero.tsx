@@ -5,35 +5,36 @@ const heroHeads = "/images/hero-heads.webp";
 
 export default function Hero(): JSX.Element {
   return (
-    <section className="hero-container h-screen flex flex-wrap relative items-start">
+    <section className="hero-container h-screen flex flex-wrap relative items-start isolate">
       <img src="/images/logo-w.svg" className="max-h-[56px]" alt="" />
       {/* Softer outer glow */}
       <RadialGradient
-        centerColor="#20C20E"
-        outerColor="#008F11"
-        size={1200}
-        centerOpacity={0.2}
-        outerOpacity={0}
-        className="absolute -top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2"
-      />
-      <RadialGradient
-        centerColor="#20C20E"
-        outerColor="#008F11"
+        centerColor="#73ffc9"
+        outerColor="#76dcff"
         size={800}
-        centerOpacity={0.2}
+        centerOpacity={0.3}
         outerOpacity={0}
         className="absolute -top-[100px] -left-[550px]"
       />
+      <RadialGradient
+        centerColor="#73ffc9"
+        outerColor="#76dcff"
+        size={1200}
+        centerOpacity={1}
+        outerOpacity={0}
+        className="absolute -top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2"
+      />
+
       <img
         className="w-full max-w-[50%] opacity-90 absolute top-0 right-0"
         src={heroHeads}
         alt=""
       />
       <RadialGradient
-        centerColor="#20C20E"
-        outerColor="#008F11"
+        centerColor="#73ffc9"
+        outerColor="#76dcff"
         size={600}
-        centerOpacity={0.2}
+        centerOpacity={1}
         outerOpacity={0}
         className="absolute -bottom-1/2 -translate-y-1/3 right-1/2 translate-x-1/2"
       />
