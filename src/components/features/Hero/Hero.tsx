@@ -1,8 +1,10 @@
 import CountdownTimer from "./CountDown";
 import RadialGradient from "../../common/RadialGradient";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const heroHeads = "/images/hero-heads.webp";
-
+const heroHeads = "/images/heads-b.webp";
+AOS.init();
 export default function Hero(): JSX.Element {
   return (
     <section className="hero-container h-screen flex flex-wrap relative items-start isolate">
@@ -24,9 +26,28 @@ export default function Hero(): JSX.Element {
         outerOpacity={0}
         className="absolute -top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2"
       />
+      <img
+        data-aos="zoom-in-down"
+        data-aos-delay="900"
+        data-aos-duration="3000"
+        className="w-full max-w-[120px] blur-0 opacity-80 absolute -top-[800px] right-[4%]"
+        src="/images/vertical-text.webp"
+        alt=""
+      />
+      <img
+        data-aos="zoom-in-down"
+        data-aos-delay="900"
+        data-aos-duration="3000"
+        className="w-full max-w-[40px] blur-sm opacity-80 absolute -top-[300px] right-[40%]"
+        src="/images/vertical-text.webp"
+        alt=""
+      />
 
       <img
-        className="w-full max-w-[50%] opacity-90 absolute top-0 right-0"
+        data-aos="zoom-in-up"
+        data-aos-delay="300"
+        data-aos-duration="3000"
+        className="w-full max-w-[60%] opacity-90 absolute -top-[15%] -right-[10%]"
         src={heroHeads}
         alt=""
       />
@@ -39,12 +60,17 @@ export default function Hero(): JSX.Element {
         className="absolute -bottom-1/2 -translate-y-1/3 right-1/2 translate-x-1/2"
       />
       <img
-        className="w-full max-w-[100px] opacity-60 absolute top-2/3 left-0"
+        className="w-full max-w-[140px] opacity-10 mix-blend-screen absolute top-2/3 -left-[1%]"
         src="/images/vertical-text.webp"
         alt=""
       />
       <div className="relative w-full h-full flex flex-wrap items-center">
-        <div className="hero-content w-full md:w-1/2 flex flex-col justify-center text-white">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="600"
+          data-aos-duration="3000"
+          className="hero-content w-full md:w-1/2 flex flex-col justify-center text-white"
+        >
           <h1 className="flex flex-col mx-auto lg:ml-auto lg:mr-32 font-bold font-grotesk text-4xl md:text-5xl">
             <span>Duomenu</span> <span>konferencija</span>
           </h1>
@@ -57,7 +83,14 @@ export default function Hero(): JSX.Element {
         </div>
 
         <div className="text-center flex flex-col items-center gap-4 w-full pb-12">
-          <div className="text-2xl">2025m. Sausio 24d.</div>
+          <div
+            data-aos="fade-down"
+            data-aos-delay="0"
+            data-aos-duration="1200"
+            className="text-2xl"
+          >
+            2025m. Sausio 24d.
+          </div>
           <CountdownTimer />
         </div>
       </div>

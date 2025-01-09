@@ -29,25 +29,25 @@ export const mockAgenda: Agenda[] = [
     time: "10:45-12:00",
     title: "Iššūkių sprendimų pristatymai",
     description:
-      "<strong> \n " +
-      "APLINKOS MINISTERIJOS SRITIS \n" + 
-      "KRAŠTO APSAUGOS MINISTERIJOS SRITIS \n" + 
-      "SUSISIEKIMO MINISTERIJOS SRITIS \n" + 
-      "TEISINGUMO MINISTERIJOS SRITIS \n" + 
-      "VIDAUS REIKALŲ MINISTERIJOS SRITIS \n" + 
-      "VYRIAUSYBĖS / BENDROJI SRITIS \n" + 
-      "ŽEMĖS ŪKIO MINISTERIJOS SRITIS \n\n" + 
-      "Klausimai 5 min. \n\n" + 
-      "EKONOMIKOS IR INOVACIJŲ MINISTERIJOS SRITIS \n" + 
-      "ENERGETIKOS MINISTERIJOS SRITIS \n" + 
-      "FINANSŲ MINISTERIJOS SRITIS \n" + 
-      "SOCIALINĖS APSAUGOS IR DARBO MINISTERIJOS SRITIS \n" + 
-      "ŠVIETIMO, MOKSLO IR SPORTO MINISTERIJOS SRITIS \n" + 
-      "UŽSIENIO REIKALŲ MINISTERIJOS SRITIS \n" +
-      "KULTŪROS MINISTERIJOS SRITIS \n " + 
-      "SVEIKATOS APSAUGOS MINISTERIJOS SRITIS \n\n" + 
-      "Klausimai  5 min." +
-      "</strong>",
+      '<strong><ul className="list">' +
+      "<li>APLINKOS MINISTERIJOS SRITIS</li>" +
+      "<li>KRAŠTO APSAUGOS MINISTERIJOS SRITIS</li>" +
+      "<li>SUSISIEKIMO MINISTERIJOS SRITIS</li>" +
+      "<li>TEISINGUMO MINISTERIJOS SRITIS</li>" +
+      "<li>VIDAUS REIKALŲ MINISTERIJOS SRITIS</li>" +
+      "<li>VYRIAUSYBĖS / BENDROJI SRITIS</li>" +
+      "<li>ŽEMĖS ŪKIO MINISTERIJOS SRITIS</li>" +
+      "<li>Klausimai 5 min.</li>" +
+      "<li>EKONOMIKOS IR INOVACIJŲ MINISTERIJOS SRITIS</li>" +
+      "<li>ENERGETIKOS MINISTERIJOS SRITIS</li>" +
+      "<li>FINANSŲ MINISTERIJOS SRITIS</li>" +
+      "<li>SOCIALINĖS APSAUGOS IR DARBO MINISTERIJOS SRITIS</li>" +
+      "<li>ŠVIETIMO, MOKSLO IR SPORTO MINISTERIJOS SRITIS</li>" +
+      "<li>UŽSIENIO REIKALŲ MINISTERIJOS SRITIS</li>" +
+      "<li>KULTŪROS MINISTERIJOS SRITIS</li>" +
+      "<li>SVEIKATOS APSAUGOS MINISTERIJOS SRITIS</li>" +
+      "<li>Klausimai 5 min.</li>" +
+      "</ul></strong>",
   },
   {
     id: "6",
