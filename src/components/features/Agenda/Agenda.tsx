@@ -9,9 +9,9 @@ export default function AgendaList({ items }: AgendaListProps): JSX.Element {
   return (
     <section className="flex items-center justify-center">
       <div className="max-w-[1000px] w-full divide-y-2 divide-white border-2 border-white rounded-3xl">
-        {items.map((item, index) => (
+        {items.map((item: Agenda) => (
           <div
-            key={index}
+            key={item.id}
             className="flex flex-col md:flex-row items-start py-3 px-10 space-y-2 md:space-y-0 md:space-x-4"
           >
             <div className="w-full md:w-60 text-white">
