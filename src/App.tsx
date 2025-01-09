@@ -7,7 +7,7 @@ import Hero from "./components/features/Hero/Hero";
 
 function App() {
   return (
-    <div className="grid gap-8 w-full">
+    <div className="grid gap-8 w-full overflow-hidden">
       <Hero />
       <AgendaList items={mockAgenda} />
       {/* <Participants entries={participantsEntries} /> */}
