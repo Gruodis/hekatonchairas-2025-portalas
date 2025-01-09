@@ -17,12 +17,15 @@ export default function CountdownTimer() {
 
   const targetDate = new Date("Jan 24, 2025 09:30:00").getTime();
 
-  const formatTimeUnit = (value: string) => (
+  const formatTimeUnit = (value: string, unitIndex: number) => (
     <div className="flex items-center space-x-1">
       {value.split("").map((digit, idx) => (
         <div
           key={idx}
-          className=" px-1.5 bg-white text-primary-dark rounded-lg text-2xl leading-[1.5] md:text-[42px]"
+          data-aos="flip-left"
+          data-aos-delay={100 * (unitIndex * 1.5 + idx + 1)}
+          data-aos-duration="600"
+          className="px-1.5 bg-white text-primary-dark rounded-lg text-2xl leading-[1.5] md:text-[42px]"
         >
           {digit}
         </div>
@@ -59,10 +62,10 @@ export default function CountdownTimer() {
 
   return (
     <div className="flex space-x-6 md:space-x-12">
-      {formatTimeUnit(timeLeft.days)}
-      {formatTimeUnit(timeLeft.hours)}
-      {formatTimeUnit(timeLeft.minutes)}
-      {formatTimeUnit(timeLeft.seconds)}
+      {formatTimeUnit(timeLeft.days, 0)}
+      {formatTimeUnit(timeLeft.hours, 1)}
+      {formatTimeUnit(timeLeft.minutes, 2)}
+      {formatTimeUnit(timeLeft.seconds, 3)}
     </div>
   );
 }
