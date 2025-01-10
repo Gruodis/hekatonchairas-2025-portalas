@@ -17,12 +17,12 @@ function App() {
   return (
     <div className="grid gap-44 w-full overflow-hidden">
       <Hero />
-      <About/>
+      <About />
       <SolutionsSection items={mockSolutions} />
 
+      <SpeakerList items={mockSpeakers} />
       <AgendaList items={mockAgenda} />
       {/* <Participants entries={participantsEntries} /> */}
-      <SpeakerList items={mockSpeakers} />
       <Footer />
     </div>
   );
