@@ -16,14 +16,14 @@ import Footer from "./components/features/Footer/Footer";
 function App() {
   return (
     <div className="grid gap-44 w-full overflow-hidden">
-      <Hero />
-      <About />
+      {/* <Hero /> */}
+      {/* <About /> */}
       <SolutionsSection items={mockSolutions} />
 
-      <SpeakerList items={mockSpeakers} />
-      <AgendaList items={mockAgenda} />
+      {/* <SpeakerList items={mockSpeakers} /> */}
+      {/* <AgendaList items={mockAgenda} /> */}
       {/* <Participants entries={participantsEntries} /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

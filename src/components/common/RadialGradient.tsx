@@ -31,10 +31,11 @@ export default function RadialGradient({
 
   return (
     <svg
-      width={size}
-      height={size}
+      width="100%"
+      height="100%"
       viewBox={`0 0 ${size} ${size}`}
-      className={className}
+      preserveAspectRatio="xMidYMid meet"
+      className={`w-full h-full max-w-[${size}px] max-h-[${size}px] ${className}`}
     >
       <defs>
         <radialGradient

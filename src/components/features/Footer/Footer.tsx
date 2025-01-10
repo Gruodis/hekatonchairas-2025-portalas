@@ -2,39 +2,39 @@ export default function Footer(): JSX.Element {
   return (
     <footer className="w-full relative flex flex-col md:flex-row py-10 px-6 bg-[#171c1a]">
       <img
-    src={"./images/3 galvos.svg"}
-    alt={"Partneriai"}
-    className="absolute top-[-10%] md:top-[-20%] left-1/2 transform -translate-x-1/2  h-14 md:h-20 w-auto object-cover"
-  />
+        src={"./images/3 galvos.svg"}
+        alt={"Partneriai"}
+        className="absolute top-[-10%] md:top-[-20%] left-1/2 transform -translate-x-1/2  h-14 md:h-20 w-auto object-cover"
+      />
       <div className="flex-[0.7] w-full md:w-auto">
         <p className="font-bold text-white">Partneriai</p>
-        <div className="flex flex-wrap space-x-6 mt-4">
+        <div className="flex flex-wrap space-x-6 mt-4 items-center">
           <a href="">
             <img
               src={"./images/partneriai-19.webp"}
               alt={"Partneriai"}
-              className="h-8 w-auto my-2 object-cover"
+              className="max-h-8 my-2"
             />
           </a>
           <a href="">
             <img
               src={"./images/partneriai-20.webp"}
               alt={"Partneriai"}
-              className="h-8 w-auto my-2 object-cover"
+              className="max-h-8 my-2"
             />
           </a>
           <a href="">
             <img
               src={"./images/partneriai-21.webp"}
               alt={"Partneriai"}
-              className="h-8 w-auto my-2 object-cover"
+              className="max-h-8 my-2"
             />
           </a>
           <a href="">
             <img
               src={"./images/partneriai-22.webp"}
               alt={"Partneriai"}
-              className="h-8 w-auto my-2 object-cover"
+              className="max-h-6 my-2"
             />
           </a>
         </div>
