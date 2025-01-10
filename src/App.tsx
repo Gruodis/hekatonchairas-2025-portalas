@@ -9,6 +9,7 @@ import { mockSolutions } from "./data/mock/solutions";
 import SolutionsSection from "./components/features/Solutions/SolutionsSection";
 
 import About from "./components/features/About/AboutSection";
+import Footer from "./components/features/Footer/Footer";
 // import { Participants } from "./components/features/Participants/Participants";
 // import { participantsEntries } from "./data/participants";
 
@@ -22,6 +23,7 @@ function App() {
       <AgendaList items={mockAgenda} />
       {/* <Participants entries={participantsEntries} /> */}
       <SpeakerList items={mockSpeakers} />
+      <Footer />
     </div>
   );
 }
