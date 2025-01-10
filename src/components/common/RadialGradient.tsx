@@ -27,7 +27,7 @@ export default function RadialGradient({
   const gradientId = `radialGradient-${centerColor.replace(
     "#",
     ""
-  )}-${outerColor.replace("#", "")}`;
+  )}-${outerColor.replace("#", "")}-${centerOpacity}-${outerOpacity}`;
 
   return (
     <svg

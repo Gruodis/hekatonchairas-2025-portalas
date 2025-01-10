@@ -25,7 +25,7 @@ export default function Hero(): JSX.Element {
         centerColor="#73ffc9"
         outerColor="#76dcff"
         size={1200}
-        centerOpacity={1}
+        centerOpacity={0.2}
         outerOpacity={0}
         className="absolute -top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2"
       />
@@ -37,19 +37,19 @@ export default function Hero(): JSX.Element {
         src="/images/vertical-text.webp"
         alt=""
       />
-      <img
+      {/* <img
         data-aos="zoom-in-down"
         data-aos-delay="900"
         data-aos-duration="3000"
         className="w-full max-w-[40px] blur-sm opacity-80 absolute -top-[300px] right-[40%]"
         src="/images/vertical-text.webp"
         alt=""
-      />
+      /> */}
       <img
         data-aos="zoom-in-up"
         data-aos-delay="300"
         data-aos-duration="2000"
-        className="w-full max-w-[40px] blur-[6px] opacity-80 absolute -bottom-[300px] right-2/3 translate-x-1/2"
+        className="w-full max-w-[40px] blur-[6px] !opacity-10 absolute -bottom-[300px] right-2/3 translate-x-1/2"
         src="/images/vertical-text.webp"
         alt=""
       />
@@ -63,14 +63,14 @@ export default function Hero(): JSX.Element {
         alt=""
       />
 
-      <RadialGradient
+      {/* <RadialGradient
         centerColor="#73ffc9"
         outerColor="#76dcff"
         size={600}
         centerOpacity={1}
         outerOpacity={0}
         className="absolute -bottom-1/2 -translate-y-1/3 right-1/2 translate-x-1/2"
-      />
+      /> */}
       <img
         className="w-full max-w-[140px] opacity-10 mix-blend-screen absolute top-2/3 -left-[1%]"
         src="/images/vertical-text.webp"
@@ -90,7 +90,7 @@ export default function Hero(): JSX.Element {
             <span>Hekaton</span> <span>cheiras</span>
           </h2>
           <span className="text-xl mt-2 ml-auto mr-8 font-grotesk">
-            Trūksta teksto
+            15 Hekatoncheiro žygdarbių <br /> valstybės iššūkių dirbtuvėse
           </span>
         </div>
 
