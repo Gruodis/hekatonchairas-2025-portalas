@@ -18,6 +18,7 @@ export default function SolutionsSection({
 }: SolutionsProps): JSX.Element {
   return (
     <section className="w-full overflow-hidden">
+      <h1 className="">Issukiai</h1>
       <Swiper
         modules={[Grid, Navigation, Pagination]}
         navigation
@@ -28,7 +29,7 @@ export default function SolutionsSection({
           rows: 2,
           fill: "row",
         }}
-        className="mySwiper max-w-[1440px]"
+        className="mySwiper max-w-[900px]"
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -55,7 +56,7 @@ export default function SolutionsSection({
             }, // Disable grid for small desktop
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 30,
             grid: {
               rows: 2,

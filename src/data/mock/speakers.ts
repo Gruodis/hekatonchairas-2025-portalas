@@ -22,11 +22,4 @@ export const mockSpeakers: Speakers[] = [
     institution: "Valstybės duomenų agentūra",
     position: "Generalinė direktorė",
   },
-  {
-    id: "4",
-    photoUrl: "./images/profile.jpg",
-    name: "Dr. Jūratė Petrauskienė",
-    institution: "Valstybės duomenų agentūra",
-    position: "Generalinė direktorė",
-  },
 ];

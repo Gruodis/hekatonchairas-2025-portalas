@@ -7,7 +7,8 @@ interface AgendaListProps {
 
 export default function AgendaList({ items }: AgendaListProps): JSX.Element {
   return (
-    <section className="flex items-center justify-center">
+    <section className="flex flex-col items-center justify-center">
+      <h1>Programa</h1>
       <div className="max-w-[900px] w-full divide-y-2 divide-white/20 border-2 border-white/10 rounded-3xl shadow-[inset_0_0px_120px_0px_theme(colors.primary-dark/0.1),0_0px_120px_0px_theme(colors.secondary-dark/0.1)]">
         {items.map((item: Agenda) => (
           <div
@@ -19,7 +20,7 @@ export default function AgendaList({ items }: AgendaListProps): JSX.Element {
             </div>
 
             <div className="flex-1 text-white">
-              <h2 className="text-2xl font-semibold text-secondary-dark">
+              <h2 className="text-xl font-semibold text-secondary-dark">
                 {item.title}
               </h2>
               {item.description && (
