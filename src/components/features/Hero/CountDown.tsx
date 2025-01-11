@@ -81,7 +81,9 @@ export default function CountdownTimer() {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => clearInterval(timer);
+    return () => {
+      clearInterval(timer);
+    };
   }, [targetDate]);
 
   return (

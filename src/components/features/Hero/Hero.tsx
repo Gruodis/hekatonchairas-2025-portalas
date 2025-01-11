@@ -1,14 +1,18 @@
+import React, { useEffect } from "react";
 import CountdownTimer from "./CountDown";
-import RadialGradient from "../../common/RadialGradient";
+import RadialGradient from "@/components/common/RadialGradient";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const heroHeads = "/images/heads-b.webp";
-AOS.init();
-export default function Hero(): JSX.Element {
+
+export default function Hero(): React.JSX.Element {
+  useEffect(() => {
+    AOS.init({ disable: "phone" });
+  }, []);
   return (
     <section className="hero-container h-screen flex flex-wrap relative items-start isolate">
-      <div className="max-w-[1440px] w-full px-12 pt-8 mx-auto">
+      <div className="max-w-[1440px] w-full xl:px-12 pt-8 mx-auto">
         <img src="/images/logo-w.svg" className="max-h-[56px]" alt="" />
       </div>
 
@@ -33,7 +37,7 @@ export default function Hero(): JSX.Element {
         data-aos="zoom-in-down"
         data-aos-delay="300"
         data-aos-duration="3000"
-        className="w-full max-w-[120px] blur-0 opacity-80 absolute -top-[800px] right-[4%]"
+        className="w-full max-w-[60px] lg:max-w-[120px] opacity-40 absolute transform-gpu duration-300 -top-[300px] lg:-top-[800px] right-[4%]"
         src="/images/vertical-text.webp"
         alt=""
       />
@@ -49,7 +53,7 @@ export default function Hero(): JSX.Element {
         data-aos="zoom-in-up"
         data-aos-delay="300"
         data-aos-duration="2000"
-        className="w-full max-w-[40px] blur-[6px] !opacity-10 absolute -bottom-[300px] right-2/3 translate-x-1/2"
+        className="lala w-full max-w-[40px] blur-[6px] !opacity-10 absolute -bottom-[300px] right-2/3 translate-x-1/2 transform-gpu duration-300"
         src="/images/vertical-text.webp"
         alt=""
       />
@@ -58,7 +62,7 @@ export default function Hero(): JSX.Element {
         data-aos="zoom-in-up"
         data-aos-delay="300"
         data-aos-duration="3000"
-        className="w-full max-w-[60%] opacity-90 absolute -top-[15%] -right-[10%] animate-longer-zoom"
+        className="z-10 md:w-full max-w-none md:max-w-[60%] opacity-25 md:opacity-100 absolute h-auto left-[10%] md:left-auto md:-right-[10%] -top-1/2 md:-top-[15%] transform-gpu duration-300"
         src={heroHeads}
         alt=""
       />
@@ -72,7 +76,7 @@ export default function Hero(): JSX.Element {
         className="absolute -bottom-1/2 -translate-y-1/3 right-1/2 translate-x-1/2"
       /> */}
       <img
-        className="w-full max-w-[140px] opacity-10 mix-blend-screen absolute top-2/3 -left-[1%]"
+        className="baba w-full max-w-[70px] lg:max-w-[120px] opacity-25 blur-sm lg:blur-0 lg:opacity-100 mix-blend-screen absolute top-2/3 -left-[1%] transform-gpu duration-300"
         src="/images/vertical-text.webp"
         alt=""
       />

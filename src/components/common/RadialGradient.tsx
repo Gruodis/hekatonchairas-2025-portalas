@@ -1,3 +1,5 @@
+import React from "react";
+
 interface RadialGradientProps {
   centerColor: string;
   outerColor: string;
@@ -23,28 +25,28 @@ export default function RadialGradient({
   outerOpacity = 0,
   centerPosition = { x: 50, y: 50 },
   radius = 50,
-}: RadialGradientProps): JSX.Element {
+}: RadialGradientProps): React.JSX.Element {
   const gradientId = `radialGradient-${centerColor.replace(
     "#",
     ""
-  )}-${outerColor.replace("#", "")}-${centerOpacity}-${outerOpacity}`;
+  )}-${outerColor.replace("#", "")}-${centerOpacity.toString()}-${outerOpacity.toString()}`;
 
   return (
     <svg
       width="100%"
       height="100%"
-      viewBox={`0 0 ${size} ${size}`}
+      viewBox={`0 0 ${size.toString()} ${size.toString()}`}
       preserveAspectRatio="xMidYMid meet"
-      className={`w-full h-full max-w-[${size}px] max-h-[${size}px] ${className}`}
+      className={`w-full h-full max-w-[${size.toString()}px] max-h-[${size.toString()}px] ${className ?? ''}`}
     >
       <defs>
         <radialGradient
           id={gradientId}
-          cx={`${centerPosition.x}%`}
-          cy={`${centerPosition.y}%`}
-          r={`${radius}%`}
-          fx={`${centerPosition.x}%`}
-          fy={`${centerPosition.y}%`}
+          cx={`${centerPosition.x.toString()}%`}
+          cy={`${centerPosition.y.toString()}%`}
+          r={`${radius.toString()}%`}
+          fx={`${centerPosition.x.toString()}%`}
+          fy={`${centerPosition.y.toString()}%`}
         >
           <stop
             offset="0%"

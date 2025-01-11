@@ -1,17 +1,20 @@
-import { ParticipantsProps } from "./participants.types";
+import type { Participants } from "@/interfaces/models/Participants";
+
+interface ParticipantsProps {
+  entries: Participants[];
+}
 
 export function Participants({ entries }: ParticipantsProps) {
   return (
-    <div className="max-w-[800px] w-full divide-y-2 divide-white border-2 border-white rounded-3xl">
-      {entries.map((entry, index) => (
-        <div
-          key={index}
-          className="flex flex-col md:flex-row items-start py-3 px-10 space-y-2 md:space-y-0 md:space-x-4"
-        >
-          <div className="w-full md:w-60 text-white">{entry.time}</div>
-          <div className="text-white">{entry.description}</div>
-        </div>
-      ))}
-    </div>
+    <section>
+      <h2 className="text-3xl font-bold pb-4">Dalyviai</h2>
+      <div className="max-w-[1440px] grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mx-auto gap-8">
+        {entries.map((entry: Participants) => (
+          <div key={entry.id} className="bg-white rounded-lg shadow-md p-4">
+            <img src={entry.photoUrl} alt="" className="w-full max-h-10" />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

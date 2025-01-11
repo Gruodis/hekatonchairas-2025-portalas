@@ -10,20 +10,20 @@ import SolutionsSection from "./components/features/Solutions/SolutionsSection";
 
 import About from "./components/features/About/AboutSection";
 import Footer from "./components/features/Footer/Footer";
-// import { Participants } from "./components/features/Participants/Participants";
-// import { participantsEntries } from "./data/participants";
+import { Participants } from "./components/features/Participants/Participants";
+import { mockParticipants } from "@/data/mock/participants";
 
 function App() {
   return (
     <div className="grid gap-44 w-full overflow-hidden">
-      {/* <Hero /> */}
-      {/* <About /> */}
+      <Hero />
+      <About />
       <SolutionsSection items={mockSolutions} />
 
-      {/* <SpeakerList items={mockSpeakers} /> */}
-      {/* <AgendaList items={mockAgenda} /> */}
-      {/* <Participants entries={participantsEntries} /> */}
-      {/* <Footer /> */}
+      <SpeakerList items={mockSpeakers} />
+      <AgendaList items={mockAgenda} />
+      <Participants entries={mockParticipants} />
+      <Footer />
     </div>
   );
 }

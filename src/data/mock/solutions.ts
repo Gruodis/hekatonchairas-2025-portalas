@@ -1,4 +1,4 @@
-import { Solution } from "../../interfaces/models/Solutions";
+import { Solution } from "@/interfaces/models/Solutions";
 
 export const mockSolutions: Solution[] = [
   {
