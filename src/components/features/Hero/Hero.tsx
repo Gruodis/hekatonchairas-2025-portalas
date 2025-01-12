@@ -11,7 +11,7 @@ export default function Hero(): React.JSX.Element {
     AOS.init({ disable: "phone" });
   }, []);
   return (
-    <section className="hero-container h-screen flex flex-wrap relative items-start isolate">
+    <section className="hero-container h-screen relative items-start isolate">
       <div className="max-w-[1440px] w-full xl:px-12 pt-8 mx-auto">
         <img src="/images/logo-w.svg" className="max-h-[56px]" alt="" />
       </div>
@@ -41,14 +41,14 @@ export default function Hero(): React.JSX.Element {
         src="/images/vertical-text.webp"
         alt=""
       />
-      {/* <img
+      <img
         data-aos="zoom-in-down"
         data-aos-delay="900"
         data-aos-duration="3000"
         className="w-full max-w-[40px] blur-sm opacity-80 absolute -top-[300px] right-[40%]"
         src="/images/vertical-text.webp"
         alt=""
-      /> */}
+      />
       <img
         data-aos="zoom-in-up"
         data-aos-delay="300"
@@ -80,7 +80,7 @@ export default function Hero(): React.JSX.Element {
         src="/images/vertical-text.webp"
         alt=""
       />
-      <div className="relative w-full h-full flex flex-wrap items-center">
+      <div className="relative max-w-[1440px] w-full h-full flex flex-wrap items-center mx-auto z-20">
         <div
           data-aos="fade-right"
           data-aos-delay="600"

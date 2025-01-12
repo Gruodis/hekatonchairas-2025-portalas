@@ -1,5 +1,5 @@
 export interface Speakers {
-  id: string;
+  id: number;
   photoUrl: string;
   name: string;
   institution?: string | null;

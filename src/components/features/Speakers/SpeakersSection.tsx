@@ -15,6 +15,11 @@ export default function SpeakerList({
         {items.map(
           (item: Speakers): React.JSX.Element => (
             <div
+              data-aos="fade-up"
+              data-aos-delay={item.id * 100}
+              data-aos-duration="1500"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out-back"
               key={item.id}
               className="text-white font-grotesk mb-8 flex flex-col gap-2 group "
             >

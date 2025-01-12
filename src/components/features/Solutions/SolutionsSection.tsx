@@ -39,7 +39,14 @@ export default function SolutionsSection({
   }, [isMobile]);
 
   return (
-    <section className="w-full max-w-[900px] max-h-[400px] mx-auto relative isolate overflow-hidden flex flex-col items-center justify-center">
+    <section
+      data-aos="zoom-in-up"
+      data-aos-delay="0"
+      data-aos-duration="1000"
+      data-aos-once="true"
+      data-aos-easing="ease-in-out-cubic"
+      className="w-full max-w-[900px] max-h-[400px] mx-auto relative isolate overflow-hidden flex flex-col items-center justify-center"
+    >
       <RadialGradient
         centerColor="#73ffc9"
         outerColor="#76dcff"

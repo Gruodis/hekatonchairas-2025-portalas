@@ -2,7 +2,13 @@ import React from "react";
 
 export default function About(): React.JSX.Element {
   return (
-    <section className="grid grid-cols-1 p-8 lg:bg-[#0a0d0f] max-w-[900px] mx-auto rounded-xl overflow-hidden z-20">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+      data-aos-easing="ease-in-out-cubic"
+      className="grid grid-cols-1 p-8 lg:bg-[#0a0d0f] max-w-[900px] mx-auto rounded-xl overflow-hidden z-20"
+    >
       <div className="grid gap-6">
         <h2 className="font-bold text-4xl col-span-full">Apie konferenciją</h2>
 
