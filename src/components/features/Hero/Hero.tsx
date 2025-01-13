@@ -23,7 +23,7 @@ export default function Hero(): React.JSX.Element {
         size={800}
         centerOpacity={0.3}
         outerOpacity={0}
-        className="absolute -top-[100px] -left-[550px]"
+        className="absolute -top-[100px] -left-[800px]"
       />
       <RadialGradient
         centerColor="#73ffc9"
@@ -67,14 +67,14 @@ export default function Hero(): React.JSX.Element {
         alt=""
       />
 
-      {/* <RadialGradient
-        centerColor="#73ffc9"
-        outerColor="#76dcff"
+      <RadialGradient
+        centerColor="#000000"
+        outerColor="#000000"
         size={600}
-        centerOpacity={1}
+        centerOpacity={0.7}
         outerOpacity={0}
-        className="absolute -bottom-1/2 -translate-y-1/3 right-1/2 translate-x-1/2"
-      /> */}
+        className="absolute -bottom-[300px] right-1/2 translate-x-1/2 z-20"
+      />
       <img
         className="baba w-full max-w-[70px] lg:max-w-[120px] opacity-25 blur-sm lg:blur-0 lg:opacity-100 mix-blend-screen absolute top-2/3 -left-[1%] transform-gpu duration-300"
         src="/images/vertical-text.webp"
@@ -90,7 +90,7 @@ export default function Hero(): React.JSX.Element {
           <h1 className="flex flex-col mx-auto lg:ml-auto lg:mr-32 font-bold font-grotesk text-4xl md:text-5xl">
             <span>Duomenų</span> <span>konferencija</span>
           </h1>
-          <h2 className="grid font-bold text-right mx-auto lg:mr-auto lg:ml-64 font-grotesk text-[64px] lg:text-[86px] leading-[1] gap-1">
+          <h2 className="grid font-bold text-right mx-auto lg:mx-0 lg:mr-auto lg:ml-[10%] font-grotesk text-[64px] lg:text-[86px] leading-[1] gap-1">
             <span>Hekaton</span> <span>cheiras</span>
           </h2>
           <span className="text-xl mt-2 ml-auto mr-8 font-grotesk">
