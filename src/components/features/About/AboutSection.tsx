@@ -7,12 +7,12 @@ export default function About(): React.JSX.Element {
       data-aos-duration="1000"
       data-aos-once="true"
       data-aos-easing="ease-in-out-cubic"
-      className="grid grid-cols-1 p-8 lg:bg-[#0a0d0f] max-w-[900px] mx-auto rounded-xl overflow-hidden z-20"
+      className="grid grid-cols-1 py-8 lg:bg-[#0a0d0f] max-w-[calc(900px+2rem)] mx-auto rounded-xl overflow-hidden z-20"
     >
       <div className="grid gap-6">
         <h2 className="font-bold text-4xl col-span-full">Apie konferenciją</h2>
 
-        <div className="flex flex-col space-y-6 text-white">
+        <div className="flex flex-col space-y-8 text-white">
           <p>
             Jau tradicija tapusioje konferencijoje kviečiame susipažinti su
             Valstybės duomenų ežero ir moderniausių analitinių įrankių

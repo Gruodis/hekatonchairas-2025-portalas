@@ -11,14 +11,14 @@ export default function SpeakerList({
   items,
 }: SpeakerListProps): React.JSX.Element {
   return (
-    <section className="relative z-20">
+    <section className="relative z-20 isolate">
       <RadialGradient
         centerColor="#73ffc9"
         outerColor="#76dcff"
         size={1200}
         centerOpacity={0.2}
         outerOpacity={0}
-        className="absolute -top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2"
+        className="absolute inset-0 left-1/2 transform -translate-x-1/2 !w-[1200px] !h-[1200px]"
       />
       <img
         data-aos="zoom-in-down"
@@ -28,8 +28,9 @@ export default function SpeakerList({
         src="/images/vertical-text.webp"
         alt=""
       />
-      <h2 className="font-bold text-4xl pb-4">Pranešėjai</h2>
+
       <div className="max-w-[900px] w-full mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-12 justify-center">
+        <h2 className="font-bold text-4xl pb-4 col-span-full">Pranešėjai</h2>
         {items.map(
           (item: Speakers): React.JSX.Element => (
             <div

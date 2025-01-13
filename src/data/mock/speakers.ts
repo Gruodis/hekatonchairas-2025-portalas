@@ -16,7 +16,7 @@ export const mockSpeakers: Speakers[] = [
     position: "PHD in Philosophy",
   },
   {
-    id: 1,
+    id: 3,
     photoUrl: "./images/host.webp",
     name: "Arnas Karužas",
     institution: null,

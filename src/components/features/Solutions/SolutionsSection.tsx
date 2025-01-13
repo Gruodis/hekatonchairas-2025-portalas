@@ -45,7 +45,7 @@ export default function SolutionsSection({
       data-aos-duration="1000"
       data-aos-once="true"
       data-aos-easing="ease-in-out-cubic"
-      className="w-full max-w-[900px] max-h-[400px] mx-auto relative isolate overflow-hidden flex flex-col items-center justify-center"
+      className="w-full max-w-[900px] p-0 max-h-[400px] mx-auto relative isolate overflow-hidden flex flex-col items-center justify-center"
     >
       <RadialGradient
         centerColor="#73ffc9"

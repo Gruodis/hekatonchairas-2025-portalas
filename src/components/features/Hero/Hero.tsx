@@ -13,7 +13,7 @@ export default function Hero(): React.JSX.Element {
   return (
     <section className="hero-container h-svh relative items-start isolate">
       <div className="flex max-w-[1440px] w-full xl:px-12 pt-8 mx-auto">
-        <img src="/images/logo-w.svg" className="max-h-[56px]" alt="" />
+        <img src="/images/logo-vda.svg" className="max-h-[56px]" alt="" />
       </div>
 
       {/* Softer outer glow */}
@@ -23,7 +23,7 @@ export default function Hero(): React.JSX.Element {
         size={800}
         centerOpacity={0.3}
         outerOpacity={0}
-        className="absolute -top-[100px] -left-[800px] -z-10"
+        className="absolute -top-[100px] -left-[800px] -z-10 select-none"
       />
       <RadialGradient
         centerColor="#73ffc9"
@@ -31,13 +31,13 @@ export default function Hero(): React.JSX.Element {
         size={1200}
         centerOpacity={0.2}
         outerOpacity={0}
-        className="absolute -top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2"
+        className="absolute -top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 select-none"
       />
       <img
         data-aos="zoom-in-down"
         data-aos-delay="300"
         data-aos-duration="3000"
-        className="-z-20 w-full max-w-[60px] lg:max-w-[120px] opacity-40 absolute transform-gpu duration-300 -top-[300px] lg:-top-[800px] right-[4%]"
+        className="select-none -z-20 w-full max-w-[60px] lg:max-w-[120px] opacity-40 absolute transform-gpu duration-300 -top-[300px] lg:-top-[800px] right-[4%]"
         src="/images/vertical-text.webp"
         alt=""
       />
@@ -45,7 +45,7 @@ export default function Hero(): React.JSX.Element {
         data-aos="zoom-in-down"
         data-aos-delay="900"
         data-aos-duration="3000"
-        className="w-full max-w-[40px] blur-sm opacity-80 absolute -top-[300px] right-[40%]"
+        className="select-none w-full max-w-[40px] blur-sm opacity-80 absolute -top-[300px] right-[40%]"
         src="/images/vertical-text.webp"
         alt=""
       />
@@ -53,7 +53,7 @@ export default function Hero(): React.JSX.Element {
         data-aos="zoom-in-up"
         data-aos-delay="300"
         data-aos-duration="2000"
-        className="lala w-full max-w-[40px] blur-[6px] !opacity-10 absolute -bottom-[300px] right-2/3 translate-x-1/2 transform-gpu duration-300"
+        className="select-none w-full max-w-[40px] blur-[6px] !opacity-10 absolute -bottom-[300px] right-2/3 translate-x-1/2 transform-gpu duration-300"
         src="/images/vertical-text.webp"
         alt=""
       />
@@ -62,7 +62,7 @@ export default function Hero(): React.JSX.Element {
         data-aos="zoom-in-up"
         data-aos-delay="300"
         data-aos-duration="3000"
-        className="z-10 md:w-full max-w-none md:max-w-[60%] opacity-25 md:opacity-100 absolute h-auto left-[10%] md:left-auto md:-right-[10%] -top-1/2 md:-top-[15%] transform-gpu duration-300"
+        className="select-none z-10 md:w-full max-w-none md:max-w-[60%] opacity-25 md:opacity-100 absolute h-auto left-[10%] md:left-auto md:-right-[10%] -top-1/2 md:-top-[15%] transform-gpu duration-300"
         src={heroHeads}
         alt=""
       />
@@ -73,10 +73,10 @@ export default function Hero(): React.JSX.Element {
         size={600}
         centerOpacity={0.7}
         outerOpacity={0}
-        className="absolute -bottom-[300px] right-1/2 translate-x-1/2 z-20"
+        className="select-none absolute -bottom-[300px] right-1/2 translate-x-1/2 z-20"
       />
       <img
-        className="baba w-full max-w-[70px] lg:max-w-[120px] opacity-25 blur-sm lg:blur-0 lg:opacity-100 mix-blend-screen absolute top-2/3 -left-[1%] transform-gpu duration-300"
+        className="select-none w-full max-w-[70px] lg:max-w-[120px] opacity-25 blur-sm lg:blur-0 lg:opacity-100 mix-blend-screen absolute top-2/3 -left-[1%] transform-gpu duration-300"
         src="/images/vertical-text.webp"
         alt=""
       />
