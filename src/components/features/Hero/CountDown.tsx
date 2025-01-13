@@ -45,7 +45,7 @@ export default function CountdownTimer() {
           data-aos-delay={100 * (unitIndex * 1.5 + idx + 1)}
           data-aos-duration="600"
           data-aos-once="true"
-          className="px-1.5 bg-white text-primary-dark rounded-lg text-2xl leading-[1.5] md:text-[42px]"
+          className="px-1.5 bg-white text-primary-dark rounded-lg text-2xl leading-[1.5] md:text-[42px] font-space"
         >
           {digit}
         </div>

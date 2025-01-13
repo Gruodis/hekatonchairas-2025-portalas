@@ -6,7 +6,7 @@ interface ParticipantsProps {
 
 export function Participants({ entries }: ParticipantsProps) {
   return (
-    <section>
+    <section className="relative z-20">
       <h2 className="text-3xl font-bold pb-4">Dalyviai</h2>
       <div className="max-w-[1440px] grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mx-auto gap-8">
         {entries.map((entry: Participants) => (

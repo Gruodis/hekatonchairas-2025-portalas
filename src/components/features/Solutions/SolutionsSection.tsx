@@ -87,7 +87,7 @@ export default function SolutionsSection({
         {items.map(
           (solution: Solution): React.JSX.Element => (
             <SwiperSlide key={solution.id} className="!bg-transparent p-4">
-              <div className="text-white p-4 text-left font-grotesk h-full !bg-[#17191a] rounded-lg shadow-[inset_0_0px_10px_0px_theme(colors.primary-dark/0.1),0_0px_10px_0px_theme(colors.secondary-dark/0.1)]">
+              <div className="text-white border-2 border-white/10 p-4 text-left font-grotesk h-full !bg-[#17191a] rounded-lg shadow-[inset_0_0px_10px_0px_theme(colors.primary-dark/0.1),0_0px_16px_4px_theme(colors.secondary-dark/0.1)]">
                 <div className="font-bold text-xl pb-2 leading-tight text-secondary-dark uppercase">
                   {solution.title}
                 </div>

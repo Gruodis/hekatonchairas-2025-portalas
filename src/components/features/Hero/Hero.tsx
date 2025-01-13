@@ -23,7 +23,7 @@ export default function Hero(): React.JSX.Element {
         size={800}
         centerOpacity={0.3}
         outerOpacity={0}
-        className="absolute -top-[100px] -left-[800px]"
+        className="absolute -top-[100px] -left-[800px] -z-10"
       />
       <RadialGradient
         centerColor="#73ffc9"
@@ -37,7 +37,7 @@ export default function Hero(): React.JSX.Element {
         data-aos="zoom-in-down"
         data-aos-delay="300"
         data-aos-duration="3000"
-        className="w-full max-w-[60px] lg:max-w-[120px] opacity-40 absolute transform-gpu duration-300 -top-[300px] lg:-top-[800px] right-[4%]"
+        className="-z-20 w-full max-w-[60px] lg:max-w-[120px] opacity-40 absolute transform-gpu duration-300 -top-[300px] lg:-top-[800px] right-[4%]"
         src="/images/vertical-text.webp"
         alt=""
       />
@@ -87,13 +87,13 @@ export default function Hero(): React.JSX.Element {
           data-aos-duration="3000"
           className="hero-content w-full md:w-1/2 flex flex-col justify-center text-white"
         >
-          <h1 className="flex flex-col mx-auto lg:ml-auto lg:mr-32 font-bold font-grotesk text-4xl md:text-5xl">
+          <h1 className="flex flex-col pb-0 mb-0 mx-auto lg:ml-auto lg:mr-32 font-bold font-grotesk text-4xl md:text-5xl">
             <span>Duomenų</span> <span>konferencija</span>
           </h1>
-          <h2 className="grid font-bold text-right mx-auto lg:mx-0 lg:mr-auto lg:ml-[10%] font-grotesk text-[64px] lg:text-[86px] leading-[1] gap-1">
+          <h2 className="grid font-bold text-right mx-auto pb-0 mb-0 lg:mx-0 lg:mr-auto lg:ml-[10%] font-grotesk text-[64px] lg:text-[86px] leading-[1] gap-1">
             <span>Hekaton</span> <span>cheiras</span>
           </h2>
-          <span className="text-xl mt-2 ml-auto mr-8 font-grotesk">
+          <span className="text-xl mt-2 mx-auto lg:ml-auto lg:mr-16 font-grotesk">
             15 Hekatoncheiro žygdarbių <br /> valstybės iššūkių dirbtuvėse
           </span>
         </div>
@@ -102,8 +102,9 @@ export default function Hero(): React.JSX.Element {
           <div
             data-aos="fade-down"
             data-aos-delay="0"
+            data-aos-once="true"
             data-aos-duration="1200"
-            className="text-2xl"
+            className="text-2xl font-space-mono text-white"
           >
             2025m. Sausio 24d.
           </div>

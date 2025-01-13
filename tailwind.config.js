@@ -10,6 +10,22 @@ export default {
       },
       fontFamily: {
         sans: [
+          '"Space Grotesk"',
+          "system-ui",
+          "Avenir",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+        grotesk: [
+          '"Space Grotesk"',
+          "system-ui",
+          "Avenir",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+        space: [
           '"Space Mono"',
           "system-ui",
           "Avenir",
@@ -17,7 +33,6 @@ export default {
           "Arial",
           "sans-serif",
         ],
-        grotesk: ['"Space Grotesk"', "monospace"],
       },
     },
   },
