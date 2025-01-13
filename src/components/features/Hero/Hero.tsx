@@ -11,8 +11,8 @@ export default function Hero(): React.JSX.Element {
     AOS.init({ disable: "phone" });
   }, []);
   return (
-    <section className="hero-container h-screen relative items-start isolate">
-      <div className="max-w-[1440px] w-full xl:px-12 pt-8 mx-auto">
+    <section className="hero-container h-svh relative items-start isolate">
+      <div className="flex max-w-[1440px] w-full xl:px-12 pt-8 mx-auto">
         <img src="/images/logo-w.svg" className="max-h-[56px]" alt="" />
       </div>
 
@@ -88,7 +88,7 @@ export default function Hero(): React.JSX.Element {
           className="hero-content w-full md:w-1/2 flex flex-col justify-center text-white"
         >
           <h1 className="flex flex-col mx-auto lg:ml-auto lg:mr-32 font-bold font-grotesk text-4xl md:text-5xl">
-            <span>Duomenu</span> <span>konferencija</span>
+            <span>Duomenų</span> <span>konferencija</span>
           </h1>
           <h2 className="grid font-bold text-right mx-auto lg:mr-auto lg:ml-64 font-grotesk text-[64px] lg:text-[86px] leading-[1] gap-1">
             <span>Hekaton</span> <span>cheiras</span>
