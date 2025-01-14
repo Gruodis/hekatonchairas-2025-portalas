@@ -53,6 +53,7 @@ export default function SolutionsSection({
         <Swiper
           key={swiperKey}
           modules={[Grid, Pagination, Autoplay, Navigation]}
+          speed={1000}
           pagination={{
             clickable: true,
             el: ".swiper-pagination",

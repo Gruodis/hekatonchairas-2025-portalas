@@ -101,28 +101,44 @@ export default function Footer(): React.JSX.Element {
 
             <div className="gap-4 w-full md:w-auto flex flex-col md:items-end items-center justify-between">
               <div className="flex space-x-4">
-                <a href="">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/Valstybesduomenuagentura.Lietuvosstatistika"
+                  rel="noreferrer noopener"
+                >
                   <img
                     src={"./images/soc-med-facebook.webp"}
                     alt={"Social Media"}
                     className="h-5 w-auto object-cover"
                   />
                 </a>
-                <a href="">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/lietuvos-statistika-statistics-lithuania/posts/?feedView=all"
+                  rel="noreferrer noopener"
+                >
                   <img
                     src={"./images/soc-med-linkedin.webp"}
                     alt={"Social Media"}
                     className="h-5 w-auto object-cover"
                   />
                 </a>
-                <a href="">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/valstybes_duomenu_agentura/"
+                  rel="noreferrer noopener"
+                >
                   <img
                     src={"./images/soc-med-insta.webp"}
                     alt={"Social Media"}
                     className="h-5 w-auto object-cover"
                   />
                 </a>
-                <a href="">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@lietuvosstatistika6039"
+                  rel="noreferrer noopener"
+                >
                   <img
                     src={"./images/soc-med-youtube.webp"}
                     alt={"Social Media"}
