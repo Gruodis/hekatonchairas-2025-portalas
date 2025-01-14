@@ -58,24 +58,27 @@ export default function Footer(): React.JSX.Element {
         />
 
         <div className="bg-[#17191a] w-full h-full relative pt-8">
-          <div className="w-full max-w-[1440px] mx-auto relative z-10 flex flex-col md:flex-row py-10 px-6 bg-[#17191a] gap-8 justify-between">
+          <div className="w-full max-w-[1440px] mx-auto relative z-10 flex flex-col md:flex-row py-10 px-6 bg-[#17191a] gap-y-16 gap-x-8 justify-between">
             <div className="flex w-full md:w-auto">
-              <div className="flex flex-wrap space-x-6 items-end justify-center md:justify-start gap-4">
-                <a href="">
-                  <img
-                    src={"./images/logo-vda.svg"}
-                    alt={"Partneriai"}
-                    className="max-h-12 w-full"
-                  />
-                </a>
-                <a href="">
-                  <img
-                    src={"./images/logo-vd-ezeras.svg"}
-                    alt={"Partneriai"}
-                    className="max-h-12 w-full"
-                  />
-                </a>
-                <div className="flex flex-col gap-4">
+              <div className="flex flex-wrap gap-y-8 space-x-6 items-end justify-center md:justify-start gap-4">
+                <div className="flex gap-8">
+                  <div className="flex flex-grow-0">
+                    <img
+                      src={"./images/logo-vd-agentura.svg"}
+                      alt={"Partneriai"}
+                      className="h-12 object-contain aspect-auto"
+                    />
+                  </div>
+                  <div className="flex">
+                    <img
+                      src={"./images/logo-vd-ezeras.svg"}
+                      alt={"Partneriai"}
+                      className="h-12 object-contain aspect-auto"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-2 md:gap-4">
                   <p className="font-bold text-white col-span-full align-top leading-[1]">
                     Partneriai
                   </p>
@@ -147,7 +150,7 @@ export default function Footer(): React.JSX.Element {
                 </a>
               </div>
               <p className="text-white text-sm text-center md:text-right leading-[1]">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                © Valstybės duomenų agentūra 2025.
               </p>
             </div>
           </div>
