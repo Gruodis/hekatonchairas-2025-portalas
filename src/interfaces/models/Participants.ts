@@ -1,5 +1,5 @@
 export interface Participants {
-  id: string;
+  id: number;
   photoUrl: string;
   name?: string;
 }

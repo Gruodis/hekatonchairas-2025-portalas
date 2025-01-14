@@ -11,7 +11,7 @@ export function Participants({ entries }: ParticipantsProps) {
         <h2 className="text-3xl font-bold pb-0 col-span-full">Dalyviai</h2>
         {entries.map((entry: Participants) => (
           <div key={entry.id} className="bg-white rounded-lg shadow-md p-4">
-            <img src={entry.photoUrl} alt="" className="w-full max-h-10" />
+            <img src={entry.photoUrl} alt="" className="max-h-10" />
           </div>
         ))}
       </div>

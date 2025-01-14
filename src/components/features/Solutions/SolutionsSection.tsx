@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Grid, Autoplay } from "swiper/modules";
-import RadialGradient from "@/components/common/RadialGradient.tsx";
 import { Solution } from "@/interfaces/models/Solutions";
 
 // Import Swiper styles
@@ -45,17 +44,9 @@ export default function SolutionsSection({
       data-aos-duration="1000"
       data-aos-once="true"
       data-aos-easing="ease-in-out-cubic"
-      className="w-full max-w-[900px] p-0 max-h-[400px] mx-auto relative isolate overflow-hidden flex flex-col items-center justify-center"
+      className="w-full max-w-[calc(900px+2rem)] p-0 max-h-[400px] mx-auto relative isolate overflow-hidden flex flex-col items-center justify-center"
     >
-      <RadialGradient
-        centerColor="#73ffc9"
-        outerColor="#76dcff"
-        size={1200}
-        centerOpacity={1}
-        outerOpacity={0}
-        className="absolute -translate-y-[400px] right-1/2 translate-x-1/2"
-      />
-      <h2 className="font-bold text-4xl w-full pb-4">Iššūkiai</h2>
+      <h2 className="font-bold text-4xl w-full pb-4 pl-4">Iššūkiai</h2>
       <Swiper
         key={swiperKey}
         modules={[Grid, Pagination, Autoplay]}
