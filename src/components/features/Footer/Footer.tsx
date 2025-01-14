@@ -29,7 +29,7 @@ export default function Footer(): React.JSX.Element {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative mt-12 md:mt-20">
       <div className="absolute w-full rounded-full -top-[900px] left-1/2 -translate-x-1/2">
         <img
           src="./images/rankos.svg"

@@ -24,7 +24,7 @@ export default function SpeakerList({
         data-aos="zoom-in-down"
         data-aos-delay="300"
         data-aos-duration="3000"
-        className="-z-20 w-full max-w-[60px] lg:max-w-[60px] opacity-40 absolute transform-gpu duration-300 -top-[300px] lg:-top-[800px] right-[4%]"
+        className="-z-20 w-full max-w-[60px] lg:max-w-[60px] blur-sm opacity-40 absolute transform-gpu duration-300 -top-0 lg:-top-2/3 right-[4%]"
         src="/images/vertical-text.webp"
         alt=""
       />

@@ -7,7 +7,7 @@ export default function About(): React.JSX.Element {
       data-aos-duration="1000"
       data-aos-once="true"
       data-aos-easing="ease-in-out-cubic"
-      className="grid grid-cols-1 py-8 lg:bg-[#0a0d0f] max-w-[calc(900px+2rem)] mx-auto rounded-xl overflow-hidden z-20"
+      className="grid grid-cols-1 py-8 lg:bg-[#0a0d0f]/60 xl:bg-transparent md:backdrop-blur-sm xl:backdrop-blur-0 max-w-[calc(900px+2rem)] mx-auto rounded-xl overflow-hidden z-20"
     >
       <div className="grid gap-6">
         <h2 className="font-bold text-4xl col-span-full">Apie konferenciją</h2>

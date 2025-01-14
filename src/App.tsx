@@ -15,7 +15,7 @@ import { mockParticipants } from "@/data/mock/participants";
 
 function App() {
   return (
-    <div className="grid gap-44 w-full overflow-hidden">
+    <div className="grid gap-[60px] w-full overflow-hidden">
       <Hero />
       <About />
       <SolutionsSection items={mockSolutions} />

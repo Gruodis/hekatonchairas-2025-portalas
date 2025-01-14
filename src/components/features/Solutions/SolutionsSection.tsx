@@ -38,7 +38,10 @@ export default function SolutionsSection({
   }, [isMobile]);
 
   return (
-    <div className="relative z-20 isolate mx-4 ">
+    <div className="relative z-30 isolate mx-4 ">
+      <h2 className="font-bold text-4xl w-full max-w-[900px] pb-4 pl-4 mx-auto">
+        15 Iššūkių
+      </h2>
       <section
         data-aos="zoom-in-up"
         data-aos-delay="0"
@@ -47,7 +50,6 @@ export default function SolutionsSection({
         data-aos-easing="ease-in-out-cubic"
         className="w-full max-w-[900px] p-0 h-[400px] mx-auto relative isolate grid items-center justify-center"
       >
-        <h2 className="font-bold text-4xl w-full pb-4 pl-4">15 Iššūkių</h2>
         <Swiper
           key={swiperKey}
           modules={[Grid, Pagination, Autoplay, Navigation]}
@@ -99,13 +101,12 @@ export default function SolutionsSection({
           )}
         </Swiper>
         {/* Custom Navigation */}
-        <div className="swiper-horizontal">
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
-        </div>
+
+        <div className="swiper-button-prev -ml-[15px] md:-ml-[28px]"></div>
+        <div className="swiper-button-next -mr-[15px] md:-mr-[28px]"></div>
 
         {/* Custom Pagination */}
-        <div className="swiper-pagination mt-4 flex justify-center"></div>
+        <div className="swiper-pagination flex justify-center -mb-[20px]"></div>
       </section>
     </div>
   );

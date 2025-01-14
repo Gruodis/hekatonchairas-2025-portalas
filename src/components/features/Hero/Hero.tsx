@@ -87,13 +87,13 @@ export default function Hero(): React.JSX.Element {
           data-aos-duration="3000"
           className="hero-content w-full md:w-1/2 flex flex-col justify-center text-white"
         >
-          <h1 className="flex flex-col pb-0 mb-0 mx-auto lg:ml-auto lg:mr-32 font-bold font-grotesk text-4xl md:text-5xl">
+          <h1 className="flex flex-col text-center md:text-left pb-3 mb-0 mx-auto lg:ml-auto lg:mr-32 font-bold font-grotesk text-4xl md:text-5xl">
             <span>Duomenų</span> <span>konferencija</span>
           </h1>
-          <h2 className="grid font-bold text-right mx-auto pb-0 mb-0 lg:mx-0 lg:mr-auto lg:ml-[10%] font-grotesk text-[64px] lg:text-[86px] leading-[1] gap-1">
+          <h2 className="grid font-bold text-center md:text-right mx-auto pb-0 mb-0 lg:mx-0 lg:mr-auto lg:ml-[10%] font-grotesk text-[64px] lg:text-[86px] leading-[1] gap-1">
             <span>Hekaton</span> <span>cheiras</span>
           </h2>
-          <span className="text-xl mt-2 mx-auto lg:ml-auto lg:mr-16 font-grotesk">
+          <span className="text-xl text-center md:text-left mt-2 mx-auto lg:ml-auto lg:mr-16 font-grotesk">
             15 Hekatoncheiro žygdarbių <br /> valstybės iššūkių dirbtuvėse
           </span>
         </div>
