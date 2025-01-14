@@ -13,6 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --swiper-theme-color: #73ffc9 !important;
+  --swiper-navigation-size: 24px !important;
 }
 #root {
   @apply mx-auto w-full;
@@ -43,6 +44,13 @@ section {
   align-items: center;
   background-color: transparent !important;
 }
+.swiper-button-prev {
+  left: 0 !important;
+}
+.swiper-button-next {
+  right: 0 !important;
+}
+
 ul {
   list-style-type: "- ";
   margin-left: 1.5rem;

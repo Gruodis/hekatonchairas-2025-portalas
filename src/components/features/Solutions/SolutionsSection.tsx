@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Grid, Autoplay } from "swiper/modules";
+import { Pagination, Grid, Autoplay, Navigation } from "swiper/modules";
 import { Solution } from "@/interfaces/models/Solutions";
 
 // Import Swiper styles
@@ -38,58 +38,75 @@ export default function SolutionsSection({
   }, [isMobile]);
 
   return (
-    <section
-      data-aos="zoom-in-up"
-      data-aos-delay="0"
-      data-aos-duration="1000"
-      data-aos-once="true"
-      data-aos-easing="ease-in-out-cubic"
-      className="w-full max-w-[calc(900px+2rem)] p-0 max-h-[400px] mx-auto relative isolate overflow-hidden flex flex-col items-center justify-center"
-    >
-      <h2 className="font-bold text-4xl w-full pb-4 pl-4">15 Iššūkių</h2>
-      <Swiper
-        key={swiperKey}
-        modules={[Grid, Pagination, Autoplay]}
-        pagination={{ clickable: true }}
-        spaceBetween={0}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: true,
-          pauseOnMouseEnter: true,
-        }}
-        loop
-        slidesPerView={1}
-        slidesPerGroup={1}
-        grid={{
-          rows: 2,
-          fill: "column",
-        }}
-        className="mySwiper"
-        breakpoints={{
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-            slidesPerGroup: 2,
-            grid: {
-              rows: 2,
-              fill: "row",
-            },
-          },
-        }}
+    <div className="relative z-20 isolate mx-4 ">
+      <section
+        data-aos="zoom-in-up"
+        data-aos-delay="0"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out-cubic"
+        className="w-full max-w-[900px] p-0 h-[400px] mx-auto relative isolate grid items-center justify-center"
       >
-        {items.map(
-          (solution: Solution): React.JSX.Element => (
-            <SwiperSlide key={solution.id} className="!bg-transparent p-4">
-              <div className="text-white border-2 border-white/10 p-4 text-left font-grotesk h-full !bg-[#17191a] rounded-lg shadow-[inset_0_0px_10px_0px_theme(colors.primary-dark/0.1),0_0px_16px_4px_theme(colors.secondary-dark/0.1)]">
-                <div className="font-bold text-xl pb-2 leading-tight text-secondary-dark uppercase">
-                  {solution.title}
+        <h2 className="font-bold text-4xl w-full pb-4 pl-4">15 Iššūkių</h2>
+        <Swiper
+          key={swiperKey}
+          modules={[Grid, Pagination, Autoplay, Navigation]}
+          pagination={{
+            clickable: true,
+            el: ".swiper-pagination",
+          }}
+          spaceBetween={0}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+          }}
+          loop
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          slidesPerView={1}
+          slidesPerGroup={1}
+          grid={{
+            rows: 2,
+            fill: "column",
+          }}
+          className="mySwiper overflow-hidden"
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 0,
+              slidesPerGroup: 2,
+              grid: {
+                rows: 2,
+                fill: "row",
+              },
+            },
+          }}
+        >
+          {items.map(
+            (solution: Solution): React.JSX.Element => (
+              <SwiperSlide key={solution.id} className="!bg-transparent p-4">
+                <div className="text-white border-2 border-white/10 p-4 text-left font-grotesk h-full !bg-[#17191a] rounded-lg shadow-[inset_0_0px_10px_0px_theme(colors.primary-dark/0.1),0_0px_16px_4px_theme(colors.secondary-dark/0.1)]">
+                  <div className="font-bold text-xl pb-2 leading-tight text-secondary-dark uppercase">
+                    {solution.title}
+                  </div>
+                  <p>{solution.description}</p>
                 </div>
-                <p>{solution.description}</p>
-              </div>
-            </SwiperSlide>
-          )
-        )}
-      </Swiper>
-    </section>
+              </SwiperSlide>
+            )
+          )}
+        </Swiper>
+        {/* Custom Navigation */}
+        <div className="swiper-horizontal">
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
+        </div>
+
+        {/* Custom Pagination */}
+        <div className="swiper-pagination mt-4 flex justify-center"></div>
+      </section>
+    </div>
   );
 }
