@@ -1,12 +1,22 @@
 import RadialGradient from "@/components/common/RadialGradient";
 import React, { useState, useRef, useEffect } from "react";
 
-export default function Footer(): React.JSX.Element {
+import { SocialLinks } from "@/interfaces/models/SocialLinks";
+
+interface SocialLinksProps {
+  socialLinks: SocialLinks[];
+}
+let test = 0;
+export default function Footer({
+  socialLinks,
+}: SocialLinksProps): React.JSX.Element {
   const [rotation, setRotation] = useState(0);
   const prevScrollY = useRef(0);
   const ROTATION_SPEED = 0.2; // Add speed control
 
   useEffect(() => {
+    console.log(`test: ${test.toString()}`);
+    test++;
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       // Determine scroll direction
@@ -104,50 +114,22 @@ export default function Footer(): React.JSX.Element {
 
             <div className="gap-4 w-full md:w-auto flex flex-col md:items-end items-center justify-between">
               <div className="flex space-x-4">
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/Valstybesduomenuagentura.Lietuvosstatistika"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src={"./images/soc-med-facebook.webp"}
-                    alt={"Social Media"}
-                    className="h-5 w-auto object-cover"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/company/lietuvos-statistika-statistics-lithuania/posts/?feedView=all"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src={"./images/soc-med-linkedin.webp"}
-                    alt={"Social Media"}
-                    className="h-5 w-auto object-cover"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://www.instagram.com/valstybes_duomenu_agentura/"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src={"./images/soc-med-insta.webp"}
-                    alt={"Social Media"}
-                    className="h-5 w-auto object-cover"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/@lietuvosstatistika6039"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src={"./images/soc-med-youtube.webp"}
-                    alt={"Social Media"}
-                    className="h-5 w-auto object-cover"
-                  />
-                </a>
+                {socialLinks.map(
+                  (link: SocialLinks): React.JSX.Element => (
+                    <a
+                      key={link.id}
+                      target="_blank"
+                      href={link.href}
+                      rel="noreferrer noopener"
+                    >
+                      <img
+                        src={link.src}
+                        alt={link.alt}
+                        className="h-5 w-auto object-cover"
+                      />
+                    </a>
+                  )
+                )}
               </div>
               <p className="text-white text-sm text-center md:text-right leading-[1]">
                 © Valstybės duomenų agentūra 2025.

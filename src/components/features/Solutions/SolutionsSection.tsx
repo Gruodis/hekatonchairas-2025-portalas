@@ -64,7 +64,6 @@ export default function SolutionsSection({
             disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
-          loop
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

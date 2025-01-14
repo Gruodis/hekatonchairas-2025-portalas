@@ -12,6 +12,7 @@ import About from "./components/features/About/AboutSection";
 import Footer from "./components/features/Footer/Footer";
 import { Participants } from "./components/features/Participants/Participants";
 import { mockParticipants } from "@/data/mock/participants";
+import { socialMediaLinks } from "./data/mock/social-links";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <SpeakerList items={mockSpeakers} />
       <AgendaList items={mockAgenda} />
       <Participants entries={mockParticipants} />
-      <Footer />
+      <Footer socialLinks={socialMediaLinks} />
     </div>
   );
 }
