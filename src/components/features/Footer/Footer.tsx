@@ -48,19 +48,19 @@ export default function Footer(): React.JSX.Element {
         size={800}
         centerOpacity={0.1}
         outerOpacity={0}
-        className="absolute -top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-0 select-none h-[800px] w-[800px]"
+        className="absolute -top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-0 select-none !h-[800px] !w-[800px]"
       />
       <footer className="w-full relative z-10 flex flex-col md:flex-row bg-[#17191a] gap-8 justify-between">
         <img
           src={"./images/3 galvos.svg"}
           alt={"Partneriai"}
-          className="select-none absolute z-20 top-[-10%] md:top-[-30%] left-1/2 transform -translate-x-1/2  h-14 md:h-20 w-auto object-cover"
+          className="select-none absolute z-20 -top-[30px] md:-top-[40px] left-1/2 transform -translate-x-1/2  h-14 md:h-20 w-auto object-cover"
         />
 
         <div className="bg-[#17191a] w-full h-full relative pt-8">
           <div className="w-full max-w-[1440px] mx-auto relative z-10 flex flex-col md:flex-row py-10 px-6 bg-[#17191a] gap-8 justify-between">
             <div className="flex w-full md:w-auto">
-              <div className="flex flex-wrap space-x-6 items-end gap-4">
+              <div className="flex flex-wrap space-x-6 items-end justify-center md:justify-start gap-4">
                 <a href="">
                   <img
                     src={"./images/logo-vda.svg"}
@@ -99,7 +99,7 @@ export default function Footer(): React.JSX.Element {
               </div>
             </div>
 
-            <div className=" w-full md:w-auto flex flex-col md:items-end items-center justify-between">
+            <div className="gap-4 w-full md:w-auto flex flex-col md:items-end items-center justify-between">
               <div className="flex space-x-4">
                 <a href="">
                   <img

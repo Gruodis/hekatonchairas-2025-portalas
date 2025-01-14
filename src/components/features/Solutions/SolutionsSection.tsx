@@ -46,16 +46,18 @@ export default function SolutionsSection({
       data-aos-easing="ease-in-out-cubic"
       className="w-full max-w-[calc(900px+2rem)] p-0 max-h-[400px] mx-auto relative isolate overflow-hidden flex flex-col items-center justify-center"
     >
-      <h2 className="font-bold text-4xl w-full pb-4 pl-4">Iššūkiai</h2>
+      <h2 className="font-bold text-4xl w-full pb-4 pl-4">15 Iššūkių</h2>
       <Swiper
         key={swiperKey}
         modules={[Grid, Pagination, Autoplay]}
         pagination={{ clickable: true }}
         spaceBetween={0}
-        // autoplay={{
-        //   delay: 3000,
-        // }}
-        // loop
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
+        }}
+        loop
         slidesPerView={1}
         slidesPerGroup={1}
         grid={{
