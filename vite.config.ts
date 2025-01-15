@@ -8,7 +8,8 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'favicon.svg'],
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon/favicon.ico', 'favicon/apple-touch-icon.png', 'favicon/favicon.svg', 'images/*'],
       manifest: {
         name: "Duomenų konferencija - Hekatoncheiras",
         short_name: "Duomenų konferencija",
