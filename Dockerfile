@@ -19,5 +19,5 @@ RUN npm run build
 # EXPOSE POTS
 EXPOSE 3000
 
-# Specify the command to start the Next.js app
-CMD ["npm","run","start"]
+# Specify the command to start the React.js + Vite app
+CMD ["npm", "run", "preview"]
