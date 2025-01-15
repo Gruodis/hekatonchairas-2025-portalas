@@ -6,7 +6,7 @@ import { SocialLinks } from "@/interfaces/models/SocialLinks";
 interface SocialLinksProps {
   socialLinks: SocialLinks[];
 }
-let test = 0;
+
 export default function Footer({
   socialLinks,
 }: SocialLinksProps): React.JSX.Element {
@@ -15,8 +15,6 @@ export default function Footer({
   const ROTATION_SPEED = 0.2; // Add speed control
 
   useEffect(() => {
-    console.log(`test: ${test.toString()}`);
-    test++;
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       // Determine scroll direction
@@ -50,7 +48,7 @@ export default function Footer({
             transition: "transform 2s ease-in-out",
           }}
         />
-        <div className="absolute z-20 inset-0 shadow-[inset_0_0_120px_350px_rgba(10,13,15,1)] rounded-full" />
+        <div className="absolute z-20 inset-0 shadow-[inset_0_0_120px_150px_rgba(10,13,15,1)] xl:shadow-[inset_0_0_120px_250px_rgba(10,13,15,1)] rounded-full" />
       </div>
       <RadialGradient
         centerColor="#73ffc9"
@@ -90,19 +88,12 @@ export default function Footer({
 
                 <div className="flex flex-col gap-2 md:gap-4">
                   <p className="font-bold text-white col-span-full align-top leading-[1]">
-                    Partneriai
+                    Partneris
                   </p>
                   <div className="flex space-x-4">
                     <a href="">
                       <img
                         src={"./images/partneriai-21.webp"}
-                        alt={"Partneriai"}
-                        className="max-h-5"
-                      />
-                    </a>
-                    <a href="">
-                      <img
-                        src={"./images/partneriai-22.webp"}
                         alt={"Partneriai"}
                         className="max-h-5"
                       />

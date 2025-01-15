@@ -10,10 +10,10 @@ export const mockSpeakers: Speakers[] = [
   },
   {
     id: 2,
-    photoUrl: "./images/philosopher.png",
-    name: "John Doe",
-    institution: "Vinlnius University",
-    position: "PHD in Philosophy",
+    photoUrl: "./images/lektorius.jpg",
+    name: "Aidas Puklevičius",
+    institution: null,
+    position: "Lektorius",
   },
   {
     id: 3,
